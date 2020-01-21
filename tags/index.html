@@ -202,12 +202,47 @@
       <div class="post-body">
           <div class="tag-cloud">
             <div class="tag-cloud-title">
-              目前共计 2 个标签
+              目前共计 11 个标签
             </div>
             <div class="tag-cloud-tags">
-              <a href="/tags/hello-world/" style="font-size: 12px; color: #ccc">hello world</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 30px; color: #111">测试</a>
+              <a href="/tags/%E7%A5%9E%E7%9B%BE%E5%B1%80/" style="font-size: 12px; color: #ccc"> 神盾局</a> <a href="/tags/hello-world/" style="font-size: 12px; color: #ccc">hello world</a> <a href="/tags/sdkfj-sd/" style="font-size: 12px; color: #ccc">sdkfj sd</a> <a href="/tags/%E5%95%8A%E6%92%92%E6%97%A6%E8%A7%A3%E6%94%BE/" style="font-size: 12px; color: #ccc">啊撒旦解放</a> <a href="/tags/%E5%B0%B1/" style="font-size: 12px; color: #ccc">就 </a> <a href="/tags/%E6%8A%80%E6%9C%AF%E7%9A%84%E5%8F%91/" style="font-size: 12px; color: #ccc">技术的发</a> <a href="/tags/%E6%A0%873/" style="font-size: 12px; color: #ccc">标3 </a> <a href="/tags/%E6%A0%87%E7%AD%BE1/" style="font-size: 12px; color: #ccc">标签1</a> <a href="/tags/%E6%A0%87%E7%AD%BE2/" style="font-size: 12px; color: #ccc">标签2</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 30px; color: #111">测试</a> <a href="/tags/%E8%BF%9B%E5%BA%A6/" style="font-size: 12px; color: #ccc">进度 </a>
             </div>
           </div>
+          +     <script type="text/javascript">
+     var alltags = document.getElementsByClassName('tag-cloud-tags');
+     var tags = alltags[0].getElementsByTagName('a');
+     for (var i = tags.length - 1; i >= 0; i--) {
+       var r=Math.floor(Math.random()*50);
+       var g=Math.floor(Math.random()*100+100);
+       var b=Math.floor(Math.random()*100+100);
+       tags[i].style.background = "rgb("+r+","+g+","+b+")";
+     }
+</script>
+
+<style>
+  .tag-cloud-tags{
+    /*font-family: Helvetica, Tahoma, Arial;*/
+    /*font-weight: 100;*/
+    text-align: center;
+    counter-reset: tags;
+  }
+  .tag-cloud-tags a{
+    border-radius: 6px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: 8px 5px 0px 0px;
+  }
+  .tag-cloud-tags a:before{
+    content: "🔖";
+  }
+
+  .tag-cloud-tags a:hover{
+     box-shadow: 0px 5px 15px 0px rgba(0,0,0,.4);
+     transform: scale(1.1);
+     /*box-shadow: 10px 10px 15px 2px rgba(0,0,0,.12), 0 0 6px 0 rgba(104, 104, 105, 0.1);*/
+     transition-duration: 0.15s;
+  }
+</style>
         
       </div>
       
@@ -293,7 +328,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
